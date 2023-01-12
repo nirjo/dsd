@@ -1,5 +1,5 @@
 const Product = (props) => {
-  const { product, onAdd, onRemove } = props;
+  const { product, onAdd } = props;
 
   return (
     <div className="card">
@@ -9,12 +9,12 @@ const Product = (props) => {
         <div>${product.price}</div>
       </div>
       <div>
-        <button onClick={() => onRemove()} className="add">
+        {/* <button onClick={() => onRemove()} className="add">
           -
         </button>
         <button onClick={() => onAdd()} className="remove">
           +
-        </button>
+        </button> */}
 
         <button onClick={() => onAdd(product)}>Add To Cart</button>
       </div>
